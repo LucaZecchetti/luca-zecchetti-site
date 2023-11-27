@@ -2,26 +2,88 @@
 <html>
 <head>
 <link rel="stylesheet" href="index.css">
+<link href="public/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+<script src="src/events.js"></script>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
-    <div style="text-align: center;margin: 18px 10%;">
-        <div style="border: 1px solid rgba(255, 255, 255, .2); border-radius: 15px;background:rgba(25, 25, 25, 0.9);padding: 0px 20px;display: flex;flex-direction: row;justify-content: space-between;height: 50px;max-width: 100vw;column-gap: 20px">
-            <div style="display: flex;flex-direction: row;justify-content: flex-start;align-self: center;">
-                <h3>Luca Zecchetti</h3>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navbar-content1">
+                <h3><i class="navbar-icon fa fa-user"></i>Luca Zecchetti</h3>
             </div>
-            <div style="display: flex;flex-direction: row;justify-content: flex-end;column-gap: 20px;align-self: center;">
-                <h3>La mia carriera</h3>
-                <h3>Chi Sono?</h3>
-                <h3>Contattami</h3>
+            <div class="navbar-content2">
+                <a href="#aboutMe"><h3 class="link">Chi Sono?</h3></a>
+                <a href="#experience"><h3 class="link">Esperienza Professionale</h3></a>
+                <a href="#contactMe"><h3 class="link">Contattami</h3></a>
             </div>
         </div>
-        <br/>
-        <div style="background:rgba(25, 25, 25, 0.9);border: 1px solid rgba(255, 255, 255, .2); border-radius: 15px;">
+    </div>
+    <div class="content-container">
+        <div id="aboutMe" class="content">
             <br/>
-            <h3>INFORMAZIONI PERSONALI</h3>
-            <h4>Email: lucazecchetti@gmail.com</h4>
-            <h4 style="cursor: pointer;"><a target="_blank" href="https://it.linkedin.com/in/luca-zecchetti-7baa1b220?trk=people-guest_people_search-card"></a>LinkedIn</a></h4>
-            <h4 style="cursor: pointer;"><a target="_blank" href="https://github.com/LucaZecchetti"></a>Github</a></h4>
+            <h3 class="content-title">CHI SONO ?</h3>
+            <br/>
+            <h3 class="content-description">Ciao, mi chiamo Luca Zecchetti, mi sono diplomato presso l'Istituto di Istruzione Superiore 'Benedetto Castelli' (I.I.S. Castelli) di brescia nel 2020 e sono un programatore sia di back-end sia di front-end con oltre 3 anni di esperienza.
+                Mi piace collaborare e lavorare a progetti impegnativi e complessi, Sono una persona empatica e attenta alle esigenze altrui.</h3><br>
+        </div>
+        <div class="vr-container"><div class="vr"></div></div>
+        <div id="experience" class="content">
+            <br/>
+            <h3 class="content-title">ESPERIENZA PROFESSIONALE</h3>
+            <br/>
+            <h3 class="content-description">Tirocinio interscolatsico (giugno 2018)</h3>
+            <h4 class="content-description">Ho sviluppato in autonomia un sito web in PHP riguardante la storia di Linux.</h4>
+            <br/>
+            <h3 class="content-description">Sviluppatore di Videogiochi Tirocinante (Dal giugno del 2019 al luglio del 2019)</h3>
+            <h4 class="content-description">Durante la mia istruzione presso l'istituto profesionale ITIS castelli, ho svolto lo stage presso XEOS SRL, dove ho approfondito la mia conoscenza di JAVA e collaborando insieme agli altri tirocinanti abbiamo creato un videogioco utilizzando Unity e C#.</h4>
+            <br/>
+            <h3 class="content-description">Upen Srl (Da settembre 2020 a settembre 2023)</h3>
+            <h4 class="content-description">In Upen ho lavorato in vari ambiti della programmazione come Full Stack Developer tra cui lo sviluppo di siti web, E-commerce sia B2B sia B2C, plugin per wordpress e anche diverse applicazioni sia di gestione aziendale sia di vendita di prodotti, occupandomi sia del lato front-end sia del back-end.</h4>
+            <br/>
+        </div>
+        <div class="vr-container"><div class="vr"></div></div>
+        <div class="content">
+            <br/>
+            <h3 class="content-title">COMPETENZE</h3>
+            <br/>
+            <h3 class="content-description">Typescript</h3>
+            <h4 class="content-description">Ho utilizzato typescript per il front-end in concomitanza con framework come ANTD, Material UI e Next js</h4>
+            <br/>
+            <h3 class="content-description">C#</h3>
+            <h4 class="content-description">Nel back-end ho utilizzato principalmente C# sempre con l'utilizzo di ASP.NET Core e Blazor che ho usato principalmente nella creazione di back-office</h4>
+            <br/>
+            <h3 class="content-description">Dart</h3>
+            <h4 class="content-description">Nella creazione di applicazioni cross-platform ho utilizzato Dart con Flutter</h4>
+            <br/>
+            <h3 class="content-description">React Native</h3>
+            <h4 class="content-description">Per la creazione di applicazioni oltre a flutter ho utilizzato anche react-native</h4>
+            <br/>
+            <h3 class="content-description">PHP e jQuery</h3>
+            <h4 class="content-description">Ho usato questi due linguaggi per lo sviluppo di customizzazioni e plugin wordpress</h4>
+            <br/>
+            <h3 class="content-description">Database</h3>
+            <h4 class="content-description">Come database ho utilizzato principalmente postgreSql e MySql mentre più raramente ho utilizzato MariaDb</h4>
+            <br/>
+            <h3 class="content-description">Gestione Progetti</h3>
+            <h4 class="content-description">Ho buona esperienza nell'utilizzo di Github e azuredev per la gestione dei progetti, ho sempre usato azure per mettere online i back-end mentre ho usato vercel per hostare i front-end</h4>
+            <br/>
+            <h3 class="content-description">Sono madre lingua in Italiano e ho una buona padronanza dell'inglese</h3>
+            <h3 class="content-description">Mi piace collaborare e lavorare a progetti impegnativi e complessi, Sono una persona empatica e attenta alle esigenze altrui.Nel corso degli anni ho acquisito buone capacità organizzative e ho una vasta esperienza nelle interazioni con i clienti.</h3>
+            <br/>
+        </div>
+        <div class="vr-container"><div class="vr"></div></div>
+        <div id="contactMe" class="contact-container">
+            <br/>
+            <h3 class="content-title">INFORMAZIONI PERSONALI</h3>
+            <h4>Email: <a href="mailto:lucazecchetti@gmail.com" class="link">lucazecchetti@gmail.com</a></h4>
+            <a target="_blank" href="https://github.com/LucaZecchetti">
+                <i class="link contact-icons fab fa-github-square"></i>
+            </a>
+            <a target="_blank" href="https://it.linkedin.com/in/luca-zecchetti-7baa1b220?trk=people-guest_people_search-card">
+                <i class="link contact-icons fab  fa-linkedin"></i>
+            </a>
+            <br/><br/>
         </div>
     </div>
 </body>
