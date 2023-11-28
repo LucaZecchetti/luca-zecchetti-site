@@ -1,5 +1,5 @@
 html,body {
-   background-image: url("public/BackgroundImage.webp"); 
+   background-color: darkgray;
    background-size: cover;
    margin: 0 !important;
    font-family: Garamond;
@@ -44,7 +44,6 @@ h1,h2,h3,h4 {
 .navbar {
     width: calc(80vw - 55px);
     border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 15px;
     background:rgba(25, 25, 25, 0.3);
     padding: 0px 20px;
     display: flex;
@@ -91,7 +90,6 @@ h1,h2,h3,h4 {
     padding: 0px 20px;
     background:rgba(25, 25, 25, 0.3);
     border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 15px;
     text-align: start;
 }
 
@@ -108,7 +106,6 @@ h1,h2,h3,h4 {
     padding: 0px 20px;
     background:rgba(25, 25, 25, 0.3);
     border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 15px;
     text-align: center;
 }
 
@@ -149,6 +146,7 @@ h1,h2,h3,h4 {
 
     .content-container {
         margin: 140px 2% 18px 2% !important;
+        font-size: 12px;
     }
 }
 
@@ -156,7 +154,12 @@ h1,h2,h3,h4 {
     .navbar-container {
         margin: 18px 2% !important;
     }
+
     .navbar {
+        font-size: 10px;
+    }
+
+    .content-container {
         font-size: 10px;
     }
 }
