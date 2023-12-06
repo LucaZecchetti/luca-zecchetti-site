@@ -1,9 +1,11 @@
 html,body {
-   background-color: darkgray;
+   background-color: #8bcde5;
    background-size: cover;
    margin: 0 !important;
-   font-family: Garamond;
+   font-family: LexendDeca;
+   scroll-margin-top: -100px; 
 }
+
 
 a {
     color: white !important;
@@ -11,6 +13,7 @@ a {
 }
 
 .link {
+    color: white !important;
     transition: color 0.3s ease;
 }
 
@@ -19,7 +22,8 @@ a {
 }
 
 h1,h2,h3,h4 {
-    color: white;
+    color: rgba(25, 25, 25, 0.9);
+    font-weight: normal !important;
 }
 
 .vr-container {
@@ -29,10 +33,17 @@ h1,h2,h3,h4 {
 }
 
 .vr {
-    background-color: rgba(255, 255, 255, .2);
+    background-color:  #fbfdfd;;
     height: 40px;
-    width: 1px;
+    width: 2px;
 }
+
+.anchor {
+    display:block;
+    padding-top:100px;
+    margin-top:-100px;
+}
+
 
 .navbar-container {
     top: 10px;
@@ -44,7 +55,7 @@ h1,h2,h3,h4 {
 .navbar {
     width: calc(80vw - 55px);
     border: 1px solid rgba(255, 255, 255, .2);
-    background:rgba(25, 25, 25, 0.3);
+    background:rgba(25, 25, 70, 0.4);
     padding: 0px 20px;
     display: flex;
     flex-direction: row;
@@ -57,6 +68,7 @@ h1,h2,h3,h4 {
 
 .scrolled-past {
     background:rgba(25, 25, 25, 0.9) !important; /* Replace with the desired background color */
+    color: white !important;
 }
 
 .navbar-content1 {
@@ -87,24 +99,34 @@ h1,h2,h3,h4 {
 }
 
 .content {
-    padding: 0px 20px;
-    background:rgba(25, 25, 25, 0.3);
+    padding: 0px 60px 40px 60px;
+    background: #fbfdfd;
+    color: rgba(25, 25, 25, 0.3);
     border: 1px solid rgba(255, 255, 255, .2);
     text-align: start;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .content-title {
+    font-weight: bold !important;
     margin: 10px 0 0 0px;
     text-align: center;
 }
 
 .content-description {
+    padding-top: 5px;
+    margin: 0 !important;
+    text-align: justify;
+}
+
+.content-subtitle {
+    font-weight: bold !important;
     margin: 0 !important;
 }
 
 .contact-container {
     padding: 0px 20px;
-    background:rgba(25, 25, 25, 0.3);
+    background:rgba(25, 25, 70, 0.3);
     border: 1px solid rgba(255, 255, 255, .2);
     text-align: center;
 }
@@ -112,6 +134,16 @@ h1,h2,h3,h4 {
 .contact-icons {
     color: white;
     font-size:xx-large;
+}
+
+.list-container {
+    margin-block-start: 5px !important;
+    margin-block-end: 0 !important;
+    padding-inline-start: 20px !important;
+}
+
+li {
+    padding-left: 5px;
 }
 
 @media only screen and (max-width: 785px) {
@@ -143,11 +175,15 @@ h1,h2,h3,h4 {
         font-size: 12px;
         height: auto;
     }
-
+    
     .content-container {
         margin: 140px 2% 18px 2% !important;
-        font-size: 12px;
+        
+        
     }
+    .content {
+        padding: 0px 15px 20px 15px !important;
+    };
 }
 
 @media only screen and (max-width: 380px) {
@@ -159,7 +195,7 @@ h1,h2,h3,h4 {
         font-size: 10px;
     }
 
-    .content-container {
-        font-size: 10px;
+    .content {
+        padding: 0px 15px 20px 15px !important;
     }
 }
